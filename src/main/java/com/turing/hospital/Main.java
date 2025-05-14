@@ -3,12 +3,13 @@ package com.turing.hospital;
 import com.turing.hospital.manager.HospitalManager;
 import com.turing.hospital.model.Doctor;
 import com.turing.hospital.model.Patient;
+import com.turing.hospital.model.Room;
 import com.turing.hospital.model.Specialization;
 
 import java.io.FileNotFoundException;
 import java.time.LocalDate;
 
-public class main {
+public class Main {
     public static void main(String[] args) throws FileNotFoundException {
         String filePath = "data/patient.txt";
         LocalDate birthDate = LocalDate.of(1990, 1, 1);
@@ -33,6 +34,14 @@ public class main {
         hospitalManager.addDoctor(doctor1);
         hospitalManager.addDoctor(doctor2);
         hospitalManager.listAllDoctors();
+        Room room=new Room(23);
+        room.assignPatient(patient1);
+        Room room2=new Room(24);
+        room.assignPatient(patient2);
+        hospitalManager.assignRoomToPatient(23,patient1);
+
+
+
 
 
 

@@ -20,7 +20,7 @@ public class Patient extends Person{
     }
 
     @Override
-    String getinfo() {
+    String getInfo() {
         return toString();
     }
 

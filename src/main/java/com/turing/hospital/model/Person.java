@@ -13,9 +13,9 @@ public  abstract class Person {
         this.birthDate = birthDate;
         this.gender = gender;
     }
-    abstract String getinfo();
+    abstract String getInfo();
 
-    public String getId() {
+    public String getId(){
         return id;
     }
 

@@ -3,8 +3,8 @@ package com.turing.hospital.model;
 import java.time.LocalDate;
 
 public class Doctor extends Person {
-    private Specialization specialization;
-    private LocalDate employmentDate;
+    private final Specialization specialization;
+    private final LocalDate employmentDate;
 
     public Doctor(String id, String name, LocalDate birthDate, String gender, Specialization specialization, LocalDate employmentDate) {
         super(id, name, birthDate, gender);
@@ -12,10 +12,7 @@ public class Doctor extends Person {
         this.employmentDate = employmentDate;
     }
 
-    @Override
-    String getinfo() {
-        return toString();
-    }
+
 
     @Override
     public String toString() {
@@ -47,6 +44,11 @@ public class Doctor extends Person {
 
     public LocalDate getEmploymentDate() {
         return employmentDate;
+    }
+
+    @Override
+    String getInfo() {
+        return "";
     }
 
 }

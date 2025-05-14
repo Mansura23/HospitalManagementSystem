@@ -14,10 +14,10 @@ public class HospitalManager {
     public static List<Doctor> doctors = new ArrayList<>();
     public static List<Appointment> appointments = new ArrayList<>();
     public static List<Room> rooms = new ArrayList<>();
-    String filePath="C:\\Users\\user\\IdeaProjects\\hospitalManagementSystem\\data\\patient.txt";
-    String filePath2="C:\\Users\\user\\IdeaProjects\\hospitalManagementSystem\\data\\doctors.txt";
-    String filePath3="C:\\Users\\user\\IdeaProjects\\hospitalManagementSystem\\data\\Appointment.txt";
-    String filePath4 ="C:\\Users\\user\\IdeaProjects\\hospitalManagementSystem\\data\\Room.txt";
+    String filePath="data/patient.txt";
+    String filePath2="data/doctors.txt";
+    String filePath3="data/Appointment.txt";
+    String filePath4 ="data/Room.txt";
      public  void addPatient(Patient patient){
          if(!patients.contains(patient)){
              patients.add(patient);
